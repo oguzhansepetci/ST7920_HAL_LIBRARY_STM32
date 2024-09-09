@@ -7,8 +7,8 @@
 
 #include "st12864h.h"
 
-extern SPI_HandleTypeDef hspi1; // SPI yapılandırması 
-extern TIM_HandleTypeDef htim1; // Timer yapılandırması 
+extern SPI_HandleTypeDef hspi1; // SPI 
+extern TIM_HandleTypeDef htim1; // Timer
 
 
 
