@@ -7,12 +7,12 @@
 
 #include "st12864h.h"
 
-extern SPI_HandleTypeDef hspi1; // SPI yapılandırması dışarıdan geliyor
-extern TIM_HandleTypeDef htim1; // Timer yapılandırması dışarıdan geliyor
+extern SPI_HandleTypeDef hspi1; // SPI yapılandırması 
+extern TIM_HandleTypeDef htim1; // Timer yapılandırması 
 
 
 
-uint8_t startRow, startCol, endRow, endCol; // coordinates of the dirty rectangle
+uint8_t startRow, startCol, endRow, endCol; 
 uint8_t numRows = 64;
 uint8_t numCols = 128;
 uint8_t Graphic_Check = 0;
