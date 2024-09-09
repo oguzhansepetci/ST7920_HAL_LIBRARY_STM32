@@ -10,8 +10,13 @@
 
 #include "stm32f4xx_hal.h"
 
-#define PIN  GPIO_PIN_4 // Seçilen Pin ---CS--
-#define PORT GPIOA      //Seçilen Port ---CS--
+// Selected Pin (Example: GPIO_PIN_4) ---CS--
+// If a different pin is needed, modify the PIN macro below to represent the new pin.
+#define PIN  GPIO_PIN_4
+
+// Selected Port (Example: GPIOA) ---CS--
+// If a different port is needed, modify the PORT macro below to represent the new port.
+#define PORT GPIOA
 
 #define LCD_CLS         0x01
 #define LCD_HOME        0x02
