@@ -30,3 +30,42 @@ By default, the project uses `GPIO_PIN_4`. To change this to a different pin, fo
 By default, the project uses `GPIOA`. To change this to a different port, update the `PORT` macro to the new port.
 ```c
 #define PORT GPIOX // X represents the port you want to use.
+```
+
+## Pin ve Port Değişiklikleri
+
+Eğer projede farklı bir pin veya port kullanılması gerekiyorsa, kodun içinde belirtilen `PIN` ve `PORT` makrolarını değiştirmeniz gerekir.
+
+### Pin Değişikliği
+
+Proje varsayılan olarak `GPIO_PIN_4` pinini kullanmaktadır. Eğer farklı bir pin kullanmak isterseniz, aşağıdaki adımları izleyin:
+
+1. **Kodda Değişiklik Yapın:** `PIN` makrosunu yeni pin numarasına göre değiştirin.
+    ```c
+    #define PIN GPIO_PIN_X // X, kullanmak istediğiniz yeni pin numarasıdır.
+    ```
+
+2. **Örnek Değişiklik:** Örneğin, `GPIO_PIN_7` pinini kullanmak istiyorsanız:
+    ```c
+    #define PIN GPIO_PIN_7
+    ```
+
+### Port Değişikliği
+
+Proje varsayılan olarak `GPIOA` portunu kullanmaktadır. Eğer farklı bir port kullanmak isterseniz, `PORT` makrosunu yeni porta göre değiştirin.
+```c
+#define PORT GPIOX // X, kullanmak istediğiniz yeni port adıdır.
+```
+## Important Note on TIM1 Configuration
+
+When configuring the TIM1 settings, it is crucial to adjust the clock signal so that the period is set to **1 microsecond**. This ensures that the timing is accurate and the system functions as expected. Failure to do so may lead to incorrect timing and unexpected behavior in your project.
+
+Make sure to verify the clock configuration in your microcontroller settings to meet this requirement.
+
+
+## TIM1 Konfigürasyonu Hakkında Önemli Not
+
+TIM1 ayarlarını yaparken, clock sinyalinin periyodunun **1 mikro saniye** olacak şekilde ayarlanması kritik öneme sahiptir. Bu ayar, doğru zamanlamanın sağlanması ve sistemin beklenildiği gibi çalışması için gereklidir. Bu ayar yapılmadığında, zamanlama hataları ve projede beklenmeyen davranışlar oluşabilir.
+
+Bu gereksinimi karşılamak için mikrodenetleyicinizin clock yapılandırmasını kontrol ettiğinizden emin olun.
+
