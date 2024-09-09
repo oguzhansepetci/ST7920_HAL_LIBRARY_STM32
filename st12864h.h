@@ -10,8 +10,8 @@
 
 #include "stm32f4xx_hal.h"
 
-#define PIN  GPIO_PIN_4
-#define PORT GPIOA
+#define PIN  GPIO_PIN_4 // Seçilen Pin ---CS--
+#define PORT GPIOA      //Seçilen Port ---CS--
 
 #define LCD_CLS         0x01
 #define LCD_HOME        0x02
