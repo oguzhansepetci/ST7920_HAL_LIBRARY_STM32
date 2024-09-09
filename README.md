@@ -1,4 +1,40 @@
 ## RepRap Ramps 1.4 128x64 GLCD HALL Library
+### Using the ST7920 Driver
+
+To use the **ST7920** display driver in the project, the following steps must be completed:
+
+1. **Include the Header File:**
+    You need to include the `st12864h.h` header file in your code. This file contains the necessary definitions for the ST7920 driver.
+    ```c
+    #include "st12864h.h"
+    ```
+
+2. **Call the Initialization Function:**
+    You must call the `ST7920_init()` function to properly initialize the display.
+    ```c
+    ST7920_init();
+    ```
+
+Failure to complete these steps may result in the display not functioning correctly.
+
+### ST7920 Sürücü Kullanımı
+
+Projede **ST7920** ekran sürücüsünü kullanmak için aşağıdaki adımların uygulanması gerekmektedir:
+
+1. **Başlık Dosyasını Dahil Edin:**
+    Kodunuzda `st12864h.h` başlık dosyasını dahil etmeniz gerekmektedir. Bu dosya, ST7920 sürücüsü için gerekli tanımlamaları içerir.
+    ```c
+    #include "st12864h.h"
+    ```
+
+2. **ST7920 Başlatma Fonksiyonu:**
+    Ekranı doğru bir şekilde başlatmak için `ST7920_init()` fonksiyonunu çağırmanız gerekmektedir.
+    ```c
+    ST7920_init();
+    ```
+
+Bu iki adımın uygulanmaması durumunda ekran düzgün çalışmayabilir.
+
 ## Pinout
 
 RepRap Ramps 1.4 Pinout:
