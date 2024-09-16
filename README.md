@@ -1,4 +1,4 @@
-## RepRap Ramps 1.4 128x64 GLCD HALL Library
+## RepRap Ramps 1.4 128x64 GLCD HAL Library
 ### Using the ST7920 Driver
 
 To use the **ST7920** display driver in the project, the following steps must be completed:
